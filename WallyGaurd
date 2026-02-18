@@ -1,0 +1,14 @@
+# Security Policy
+
+## Supported Versions
+This project is in pre-prototype stage (Patent Pending). Only the latest commit is supported.
+
+## Reporting a Vulnerability
+If you discover a security issue (especially anything related to data handling or alerts), please report it privately to:
+patricia.sanford [at] your-email.com
+
+Do **not** open a public GitHub issue.
+
+We will respond within 48 hours and work with you on responsible disclosure.
+
+Thank you for helping keep WallyGuard secure for vulnerable users.
