@@ -1,0 +1,10 @@
+# Ignore sensitive files
+*.key
+*.pem
+*.env
+secrets.*
+personal-notes-private.md
+private-*
+*.pdf          # Remove this line later if you want to upload patent docs
+*.docx         # Remove this line later if you want to upload patent docs
+*.zip
