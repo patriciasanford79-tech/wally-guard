@@ -1,4 +1,4 @@
-## WallyGuard — Closed-Loop Wearable Distress Communication Device
+# WallyGuard — Closed-Loop Wearable Distress Communication Device
 
 **Patent Pending — U.S. Provisional Patent #63/985,295**  
 **Filed: February 18, 2026**  
