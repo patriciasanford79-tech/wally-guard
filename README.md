@@ -1,11 +1,11 @@
 # WallyGuard — Closed-Loop Wearable Distress Communication Device
 
-**Patent Pending — U.S. Provisional Patent #63/985,295**  
+**Patent Pending — U.S. Provisional Patent #63/985,**  
 **Filed: February 18, 2026**  
 **Inventor: Patricia Darlene Sanford, Manning, SC**
 
 **⚠️ LEGAL NOTICE — ALL RIGHTS RESERVED**  
-This repository contains confidential invention materials protected by U.S. Provisional Patent #63/985,295.  
+This repository contains confidential invention materials protected by U.S. Provisional Patent #63/985,.  
 No part of this repository (code, documents, diagrams, notes, or ideas) may be copied, used, or shared without express written permission from the inventor.
 
 For licensing, partnership, or prototype collaboration inquiries only:  
