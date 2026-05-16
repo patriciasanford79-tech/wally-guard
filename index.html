@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WallyVault — Built for the most vulnerable.</title>
+  <meta name="description" content="WallyVault is a caregiver-controlled companion for wearable status, emergency context, and first responder access. Privacy-first. Founder built." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-start: #0a0e1a;
+      --bg-end: #0d1b2e;
+      --cyan: #00d4c8;
+      --cyan-dim: rgba(0, 212, 200, 0.6);
+      --cyan-faint: rgba(0, 212, 200, 0.15);
+      --white: #ffffff;
+      --white-soft: rgba(255, 255, 255, 0.82);
+      --white-mute: rgba(255, 255, 255, 0.65);
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --card-border: rgba(255, 255, 255, 0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      color: var(--white);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 96px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    /* HERO */
+    .hero {
+      padding: 120px 0 96px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border: 1px solid var(--cyan-dim);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      font-size: clamp(48px, 8vw, 84px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 40px;
+    }
+
+    .logo .wally { color: var(--white); }
+    .logo .vault { color: var(--cyan); }
+
+    .headline {
+      font-size: clamp(24px, 3.4vw, 38px);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      max-width: 880px;
+      margin: 0 auto 28px;
+      color: var(--white);
+    }
+
+    .hero-body {
+      font-size: 17px;
+      max-width: 720px;
+      margin: 0 auto 48px;
+      color: var(--white-soft);
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: #062525;
+    }
+
+    .btn-primary:hover { transform: translateY(-1px); opacity: 0.92; }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-1px);
+    }
+
+    /* GENERIC SECTION */
+    .section-heading {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .section-sub {
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--cyan);
+      margin-bottom: 24px;
+    }
+
+    .section-body {
+      font-size: 17px;
+      color: var(--white-soft);
+      max-width: 760px;
+    }
+
+    .section-narrow {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-narrow .section-body { margin: 0 auto; }
+
+    /* HOW IT WORKS — 3 columns */
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .col {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .col-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--cyan);
+      margin-bottom: 14px;
+    }
+
+    .col p {
+      color: var(--white-soft);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    /* LIST */
+    .feature-list {
+      list-style: none;
+      margin-top: 36px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding: 18px 20px 18px 44px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: var(--white-soft);
+      font-size: 16px;
+    }
+
+    .feature-list li::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 26px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 0 4px var(--cyan-faint);
+    }
+
+    /* BRAND STATEMENT */
+    .brand-statement {
+      text-align: center;
+      padding: 80px 32px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+    }
+
+    /* WAITLIST */
+    .waitlist-form {
+      display: flex;
+      gap: 12px;
+      max-width: 520px;
+      margin: 36px auto 0;
+      flex-wrap: wrap;
+    }
+
+    .waitlist-form input[type="email"] {
+      flex: 1;
+      min-width: 220px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--white);
+      font-family: inherit;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+
+    .waitlist-form input[type="email"]::placeholder { color: var(--white-mute); }
+    .waitlist-form input[type="email"]:focus { border-color: var(--cyan); }
+
+    /* FOOTER */
+    footer {
+      padding: 56px 0 64px;
+      text-align: center;
+      color: var(--white-mute);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    footer .footer-line { margin-bottom: 4px; }
+    footer .footer-tag { color: var(--cyan); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; margin-top: 12px; }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      section { padding: 72px 0; }
+      .hero { padding: 88px 0 72px; }
+      .columns { grid-template-columns: 1fr; gap: 16px; margin-top: 36px; }
+      .brand-statement { padding: 56px 24px; }
+      .btn { width: 100%; max-width: 320px; }
+      .button-row { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SECTION 1 — HERO -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Patent Pending · Privacy-First · Founder Built</span>
+      <h1 class="logo"><span class="wally">Wally</span><span class="vault">Vault</span></h1>
+      <p class="headline">Built for the moments when a person cannot clearly speak for themselves and support cannot wait.</p>
+      <p class="hero-body">WallyVault is not just for one diagnosis, one age, or one setting. It is being built for the most vulnerable — for anyone who may need a voice, added protection, or better context when they cannot fully speak for themselves. This is bigger than one system. Bigger than one label. Bigger than one moment.</p>
+      <div class="button-row">
+        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="#mission" class="btn btn-secondary">Read the Mission</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 2 — THE PROBLEM -->
+  <section id="mission">
+    <div class="container section-narrow">
+      <h2 class="section-heading">Silence should not be a risk factor.</h2>
+      <p class="section-body">Most consumer safety systems rely on verbal communication, smartphone access, and multi-step interaction. In high-stress, medical, or nonverbal environments, these assumptions fail the people who need help most.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — GUARDIAN CONTEXT -->
+  <section>
+    <div class="container section-narrow">
+      <h2 class="section-heading">Guardian context, without surveillance.</h2>
+      <p class="section-sub">A caregiver-controlled companion for wearable status, emergency context, and first responder access.</p>
+      <p class="section-body">WallyVault is not a tracking app. No raw audio leaves the device. No video is uploaded to the cloud. Only event patterns and metadata alerts — time, location, trigger — reach the caregiver and authorized responders. The person wearing Wally Guard stays protected. Not surveilled.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — HOW IT WORKS -->
+  <section>
+    <div class="container">
+      <div style="text-align:center;">
+        <h2 class="section-heading">Closed-Loop Safety Infrastructure.</h2>
+      </div>
+      <div class="columns">
+        <div class="col">
+          <span class="col-label">01 · Detect</span>
+          <p>On-device TinyML processing. Heart rate, motion, sound — analyzed locally. No cloud required.</p>
+        </div>
+        <div class="col">
+          <span class="col-label">02 · Alert</span>
+          <p>Metadata alert (time + location + trigger) sent to caregiver device and authorized scanners. Raw data stays on device.</p>
+        </div>
+        <div class="col">
+          <span class="col-label">03 · Confirm</span>
+          <p>Closed-loop confirmation ensures the alert was received. Silence is not an answer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 — WHO IT'S FOR -->
+  <section>
+    <div class="container">
+      <div style="text-align:center;">
+        <h2 class="section-heading">Built for the most vulnerable.</h2>
+      </div>
+      <ul class="feature-list">
+        <li>Nonverbal individuals with autism, cognitive disabilities, or communication barriers.</li>
+        <li>Caregivers and families who need context, not cameras.</li>
+        <li>First responders — NFC/QR scan delivers: NON-VERBAL VULNERABLE — STOP, THINK, OBSERVE.</li>
+        <li>Schools — metadata alert displays HIGH DISTRESS on on-site scanner.</li>
+        <li>Emergency rooms — HIGH DISTRESS — NON-VERBAL PATIENT on ER scanner.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 6 — BRAND STATEMENT -->
+  <section>
+    <div class="container">
+      <div class="brand-statement">
+        <h2 class="section-heading">Wally Vault brings choice back.</h2>
+        <p class="section-body" style="margin: 0 auto;">Your life. Your data. Your choice. The cloud is a tool. Not a surrender. Control is not anti-tech. It is the point.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 — JOIN WAITLIST -->
+  <section id="waitlist">
+    <div class="container section-narrow">
+      <h2 class="section-heading">Be first.</h2>
+      <p class="section-body">WallyGuard is in development. Join the waitlist to follow progress and get early access.</p>
+      <form class="waitlist-form" action="mailto:Patricia.sanford79@gmail.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
+        <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SECTION 8 — FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-line">&copy; 2026 MyWallyBot LLC. All rights reserved.</div>
+      <div class="footer-line">Patent Pending — U.S. Provisional Patent Application No. 63/985,295</div>
+      <div class="footer-line">WallyVault&trade; and Wally Guard&trade; are trademarks of MyWallyBot LLC.</div>
+      <div class="footer-tag">Privacy-First · Founder Built · Manning, SC</div>
+    </div>
+  </footer>
+
+</body>
+</html>
