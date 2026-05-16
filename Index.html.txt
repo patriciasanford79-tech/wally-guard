@@ -114,7 +114,7 @@
     <h2>Contact</h2>
     <p><strong>Patricia Darlene Sanford</strong><br>
     Founder & CEO, Wally Guard LLC<br>
-    📧 [Your email]<br>
+    📧 <a href="mailto:tricia@mywallybot.com">tricia@mywallybot.com</a><br>
     🔗 [Your LinkedIn]</p>
 
     <footer>
