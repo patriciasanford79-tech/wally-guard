@@ -11,14 +11,26 @@ export default function Footer() {
             No funny business.
           </p>
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
           <a className="hover:text-spectre-accent transition" href="/export">
-            Export Guide
+            Export
+          </a>
+          <a className="hover:text-spectre-accent transition" href="/setup">
+            Setup
+          </a>
+          <a className="hover:text-spectre-accent transition" href="/ai-routing">
+            AI Routing
+          </a>
+          <a className="hover:text-spectre-accent transition" href="/local-ai">
+            Local AI
+          </a>
+          <a className="hover:text-spectre-accent transition" href="/faq">
+            FAQ
           </a>
           <a className="hover:text-spectre-accent transition" href="/manifesto">
             Manifesto
           </a>
-          <span className="text-xs font-mono">v0.1.0</span>
+          <span className="text-xs font-mono">v0.2.0</span>
         </div>
       </div>
     </footer>

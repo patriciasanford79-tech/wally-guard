@@ -1,7 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
 
 const links = [
-  { to: '/export', label: 'Export Guide' },
+  { to: '/export', label: 'Export' },
+  { to: '/setup', label: 'Setup' },
+  { to: '/ai-routing', label: 'AI Routing' },
+  { to: '/local-ai', label: 'Local AI' },
+  { to: '/faq', label: 'FAQ' },
   { to: '/manifesto', label: 'Manifesto' },
 ];
 
@@ -15,7 +19,7 @@ export default function Navbar() {
             SPECTRE
           </span>
         </Link>
-        <nav className="flex items-center gap-6 text-sm">
+        <nav className="flex items-center gap-4 md:gap-6 text-sm overflow-x-auto whitespace-nowrap">
           {links.map((l) => (
             <NavLink
               key={l.to}
