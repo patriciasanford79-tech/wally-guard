@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0A1628">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Wallybot — a calm voice companion. Press to talk, listen to a reply.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Wallybot — Alert Not Surveil</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1628'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23C9A84C'%3EW%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <div class="brand-text">
+        <span class="brand-name">Wallybot</span>
+        <span class="brand-tagline">Alert Not Surveil</span>
+      </div>
+    </div>
+    <button id="newChatBtn" class="ghost-btn" type="button" aria-label="Start a new conversation">New</button>
+  </header>
+
+  <main class="stage" role="main">
+    <div id="transcript" class="transcript" aria-live="polite" aria-label="Conversation"></div>
+
+    <div class="controls">
+      <button id="talkBtn" class="talk-btn" type="button" aria-pressed="false" aria-label="Hold to talk">
+        <span class="talk-btn__ring" aria-hidden="true"></span>
+        <span class="talk-btn__inner" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" aria-hidden="true">
+            <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/>
+          </svg>
+        </span>
+        <span class="talk-btn__label">Hold to talk</span>
+      </button>
+
+      <form id="textForm" class="text-form" autocomplete="off">
+        <label for="textInput" class="sr-only">Type a message</label>
+        <input id="textInput" type="text" placeholder="Or type here…" aria-label="Type a message">
+        <button id="sendBtn" class="send-btn" type="submit" aria-label="Send message">Send</button>
+      </form>
+    </div>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <small>
+      Patent Pending — U.S. Provisional Patent #63/985,295.
+      © Patricia Darlene Sanford / MyWallyBot LLC, Manning SC. All rights reserved.
+    </small>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

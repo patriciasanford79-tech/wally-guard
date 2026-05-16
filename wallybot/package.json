@@ -1,0 +1,13 @@
+{
+  "name": "wallybot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wallybot — voice companion (Patent Pending #63/985,295). All rights reserved.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0"
+  }
+}
