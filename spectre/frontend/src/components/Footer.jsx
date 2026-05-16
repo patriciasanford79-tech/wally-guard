@@ -12,6 +12,9 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <a className="hover:text-spectre-accent transition" href="/import">
+            Import
+          </a>
           <a className="hover:text-spectre-accent transition" href="/export">
             Export
           </a>

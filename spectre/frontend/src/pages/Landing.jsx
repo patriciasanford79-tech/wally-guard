@@ -21,10 +21,13 @@ export default function Landing() {
           about what they have on you.
         </p>
 
-        <div className="mt-10">
+        <div className="mt-10 flex flex-col sm:flex-row gap-3">
           <Link to="/export" className="btn-primary text-lg">
             Export Your Data Free
             <Arrow />
+          </Link>
+          <Link to="/import" className="btn-ghost text-lg">
+            Try the import demo
           </Link>
         </div>
 

@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 
 const links = [
+  { to: '/import', label: 'Import' },
   { to: '/export', label: 'Export' },
   { to: '/setup', label: 'Setup' },
   { to: '/ai-routing', label: 'AI Routing' },

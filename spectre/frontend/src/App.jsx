@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import Landing from './pages/Landing.jsx';
 import ExportGuide from './pages/ExportGuide.jsx';
+import Import from './pages/Import.jsx';
 import Setup from './pages/Setup.jsx';
 import AiRouting from './pages/AiRouting.jsx';
 import LocalAi from './pages/LocalAi.jsx';
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/export" element={<ExportGuide />} />
           <Route path="/export/:platformId" element={<ExportGuide />} />
+          <Route path="/import" element={<Import />} />
           <Route path="/setup" element={<Setup />} />
           <Route path="/ai-routing" element={<AiRouting />} />
           <Route path="/local-ai" element={<LocalAi />} />
