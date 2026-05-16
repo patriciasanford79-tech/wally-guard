@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import dotenv from 'dotenv';
 
 import apiRouter from './routes/api.js';
+import importRouter from './routes/import.js';
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(express.json({ limit: '1mb' }));
 app.use(morgan(isProd ? 'combined' : 'dev'));
 
 app.use('/api', apiRouter);
+app.use('/api', importRouter);
 
 if (isProd) {
   const staticDir = path.resolve(__dirname, '../frontend/dist');

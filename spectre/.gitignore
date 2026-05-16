@@ -31,3 +31,7 @@ Thumbs.db
 # coverage
 coverage/
 *.lcov
+
+# imports (user-uploaded files + local metadata store)
+backend/data/uploads/
+backend/data/imports.json
