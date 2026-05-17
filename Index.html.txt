@@ -83,8 +83,8 @@
     <p><strong>Closed-Loop Wearable Distress Communication and Safety Device</strong></p>
     
     <div class="patent-badge">
-        ⚠️ <strong>Patent Pending</strong><br>
-        USPTO Provisional Application #63/985,295<br>
+        ⚠️ <strong>Patent Pending — U.S. Provisional Application No. 63/985,295</strong><br>
+        © 2026 MyWallyBot LLC. All rights reserved.<br>
         Filed: February 18, 2026
     </div>
 
@@ -97,7 +97,7 @@
     <div class="status-box">
         <h3>🚀 Development Status</h3>
         <ul>
-            <li>✅ Provisional patent filed (USPTO #63/985,295)</li>
+            <li>✅ Provisional application filed (No. 63/985,295)</li>
             <li>✅ LLC established, EIN assigned</li>
             <li>✅ Home R&D zoning approved</li>
             <li>✅ Repository organized & website live</li>
@@ -118,9 +118,8 @@
     🔗 [Your LinkedIn]</p>
 
     <footer>
-        <p>© 2026 Patricia Darlene Sanford. All rights reserved.<br>
-        <strong>Confidential — Patent Pending</strong><br>
-        Provisional Patent Application #63/985,295</p>
+        <p>Patent Pending — U.S. Provisional Application No. 63/985,295<br>
+        © 2026 MyWallyBot LLC. All rights reserved.</p>
     </footer>
 </body>
 </html>

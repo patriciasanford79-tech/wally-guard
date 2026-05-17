@@ -1,11 +1,12 @@
-Copyright (c) 2026 Patricia Darlene Sanford
+Patent Pending — U.S. Provisional Application No. 63/985,295
+© 2026 MyWallyBot LLC. All rights reserved.
+
+Filed February 18, 2026.
 
 All Rights Reserved.
 
-This repository and all content (including ideas, notes, documents, diagrams, code, mock-ups, and designs) is protected under U.S. Provisional Patent #63/985,295 filed February 18, 2026.
+No reproduction, distribution, modification, derivative works, or commercial use of this repository or its contents is permitted without express written license from MyWallyBot LLC.
 
-No reproduction, distribution, modification, derivative works, or commercial use is permitted without express written license from the inventor.
-
-Any unauthorized use may constitute patent infringement and/or misappropriation of trade secrets once the non-provisional patent issues.
+Unauthorized use may constitute misappropriation of trade secrets and breach of confidentiality.
 
 For licensing, partnership, or prototype collaboration inquiries only, contact: tricia@mywallybot.com
