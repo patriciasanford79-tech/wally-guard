@@ -1,0 +1,31 @@
+# Receipt vault summary
+Generated: 2026-05-19T16:34:09.449926Z
+Total receipts: 38
+Total $ spent:  $492.03
+
+## Spend by category
+  tech/saas          $      222.21
+  utilities          $      122.04
+  business           $       68.51
+  medical            $       48.17
+  other              $       30.50
+  household          $        0.60
+
+## Top 10 merchants by spend
+  Apple                        $      162.23
+  Boost Mobile                 $      122.04
+  Found                        $       68.51
+  Bitdefender (2checkout)      $       59.98
+  MUSC                         $       48.17
+  Stripe                       $       30.50
+  eBay                         $        0.60
+
+## Coverage notes
+- Date range covered: 2025-01-01 through 2026-05-19
+- Account: Patricia.sanford79@gmail.com
+- Method: Gmail MCP server (gmail.readonly) + regex extraction from snippets
+- This pass focused on high-precision targeted sender queries (Apple, Stripe, Found,
+  2checkout, MUSC, PayPal, Boost Mobile). Many merchants likely have receipts in the
+  inbox that are not yet captured — see receipts_errors.csv for skipped/uncapturable.
+- To expand coverage, re-run the pipeline with additional Gmail queries; the build
+  script (build_vault.py) is idempotent (UPSERT by gmail_msg_id).
