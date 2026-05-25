@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MyWallyBot">
+  <defs>
+    <linearGradient id="fav_ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8d3dc"/>
+      <stop offset="60%" stop-color="#6a7884"/>
+      <stop offset="100%" stop-color="#26b8e8"/>
+    </linearGradient>
+    <linearGradient id="fav_w" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e6ecf2"/>
+      <stop offset="100%" stop-color="#4a5560"/>
+    </linearGradient>
+    <linearGradient id="fav_v" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7eecff"/>
+      <stop offset="100%" stop-color="#0c5cbf"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="#030a14"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#fav_ring)" stroke-width="2.4"/>
+  <polygon points="14,16 27,16 25.7,48" fill="url(#fav_w)"/>
+  <polygon points="50,16 37,16 38.3,48" fill="url(#fav_w)"/>
+  <polygon points="27.5,16 36.5,16 32,50" fill="url(#fav_v)"/>
+</svg>

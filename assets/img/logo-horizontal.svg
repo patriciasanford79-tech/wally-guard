@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240">
+  <defs>
+    <linearGradient id="h_ringChrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b4856"/>
+      <stop offset="35%" stop-color="#c8d3dc"/>
+      <stop offset="55%" stop-color="#6a7884"/>
+      <stop offset="80%" stop-color="#26b8e8"/>
+      <stop offset="100%" stop-color="#0a4a78"/>
+    </linearGradient>
+    <radialGradient id="h_ringGlow" cx="72%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#66e5ff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#66e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="h_wChrome" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e6ecf2"/>
+      <stop offset="45%" stop-color="#9aa6b2"/>
+      <stop offset="100%" stop-color="#2e3640"/>
+    </linearGradient>
+    <linearGradient id="h_cyanV" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7eecff"/>
+      <stop offset="55%" stop-color="#2bbaff"/>
+      <stop offset="100%" stop-color="#0c5cbf"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(20,20)">
+    <circle cx="100" cy="100" r="84" fill="none" stroke="url(#h_ringChrome)" stroke-width="5.5"/>
+    <circle cx="100" cy="100" r="84" fill="none" stroke="url(#h_ringGlow)" stroke-width="6"/>
+    <polygon points="44,50 84,50 80,150" fill="url(#h_wChrome)"/>
+    <polygon points="156,50 116,50 120,150" fill="url(#h_wChrome)"/>
+    <polygon points="86,50 114,50 100,156" fill="url(#h_cyanV)"/>
+  </g>
+  <text x="245" y="140" font-family="'DejaVu Sans','Helvetica',sans-serif" font-weight="700" font-size="92">
+    <tspan fill="#e8eef4" textLength="100" lengthAdjust="spacingAndGlyphs">My</tspan><tspan dx="8" fill="#2bbaff" textLength="230" lengthAdjust="spacingAndGlyphs">Wally</tspan><tspan dx="8" fill="#e8eef4" textLength="150" lengthAdjust="spacingAndGlyphs">Bot</tspan><tspan dx="14" font-size="40" fill="#6d8ba8" letter-spacing="3">LLC</tspan>
+  </text>
+</svg>

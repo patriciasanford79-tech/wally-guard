@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="og_ringChrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b4856"/>
+      <stop offset="35%" stop-color="#c8d3dc"/>
+      <stop offset="55%" stop-color="#6a7884"/>
+      <stop offset="80%" stop-color="#26b8e8"/>
+      <stop offset="100%" stop-color="#0a4a78"/>
+    </linearGradient>
+    <radialGradient id="og_ringGlow" cx="72%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#66e5ff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#66e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="og_wChrome" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e6ecf2"/>
+      <stop offset="45%" stop-color="#9aa6b2"/>
+      <stop offset="100%" stop-color="#2e3640"/>
+    </linearGradient>
+    <linearGradient id="og_cyanV" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7eecff"/>
+      <stop offset="55%" stop-color="#2bbaff"/>
+      <stop offset="100%" stop-color="#0c5cbf"/>
+    </linearGradient>
+    <radialGradient id="og_bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#08182b"/>
+      <stop offset="100%" stop-color="#02070f"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og_bg)"/>
+  <g transform="translate(110,165)">
+    <circle cx="150" cy="150" r="126" fill="none" stroke="url(#og_ringChrome)" stroke-width="8.5"/>
+    <circle cx="150" cy="150" r="126" fill="none" stroke="url(#og_ringGlow)" stroke-width="9"/>
+    <polygon points="66,75 126,75 120,225" fill="url(#og_wChrome)"/>
+    <polygon points="234,75 174,75 180,225" fill="url(#og_wChrome)"/>
+    <polygon points="129,75 171,75 150,234" fill="url(#og_cyanV)"/>
+  </g>
+  <text x="430" y="320" font-family="'DejaVu Sans','Helvetica',sans-serif" font-weight="700" font-size="86">
+    <tspan fill="#e8eef4" textLength="105" lengthAdjust="spacingAndGlyphs">My</tspan><tspan dx="8" fill="#2bbaff" textLength="245" lengthAdjust="spacingAndGlyphs">Wally</tspan><tspan dx="8" fill="#e8eef4" textLength="155" lengthAdjust="spacingAndGlyphs">Bot</tspan><tspan dx="14" font-size="40" fill="#6d8ba8" letter-spacing="3">LLC</tspan>
+  </text>
+  <text x="430" y="395" font-family="'DejaVu Sans','Helvetica',sans-serif" font-size="28" fill="#9aaec6" letter-spacing="1">Privacy-first tools for safety, access,</text>
+  <text x="430" y="435" font-family="'DejaVu Sans','Helvetica',sans-serif" font-size="28" fill="#9aaec6" letter-spacing="1">and records infrastructure.</text>
+</svg>

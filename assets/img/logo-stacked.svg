@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720">
+  <defs>
+    <linearGradient id="s_ringChrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b4856"/>
+      <stop offset="35%" stop-color="#c8d3dc"/>
+      <stop offset="55%" stop-color="#6a7884"/>
+      <stop offset="80%" stop-color="#26b8e8"/>
+      <stop offset="100%" stop-color="#0a4a78"/>
+    </linearGradient>
+    <radialGradient id="s_ringGlow" cx="72%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#66e5ff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#66e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s_wChrome" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e6ecf2"/>
+      <stop offset="45%" stop-color="#9aa6b2"/>
+      <stop offset="100%" stop-color="#2e3640"/>
+    </linearGradient>
+    <linearGradient id="s_cyanV" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7eecff"/>
+      <stop offset="55%" stop-color="#2bbaff"/>
+      <stop offset="100%" stop-color="#0c5cbf"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="720" fill="#030a14"/>
+  <g transform="translate(150,60)">
+    <circle cx="150" cy="150" r="126" fill="none" stroke="url(#s_ringChrome)" stroke-width="8.5"/>
+    <circle cx="150" cy="150" r="126" fill="none" stroke="url(#s_ringGlow)" stroke-width="9"/>
+    <polygon points="66,75 126,75 120,225" fill="url(#s_wChrome)"/>
+    <polygon points="234,75 174,75 180,225" fill="url(#s_wChrome)"/>
+    <polygon points="129,75 171,75 150,234" fill="url(#s_cyanV)"/>
+  </g>
+  <text x="115" y="540" font-family="'DejaVu Sans','Helvetica',sans-serif" font-weight="700" font-size="74">
+    <tspan fill="#e8eef4" textLength="82" lengthAdjust="spacingAndGlyphs">My</tspan><tspan dx="6" fill="#2bbaff" textLength="186" lengthAdjust="spacingAndGlyphs">Wally</tspan><tspan dx="6" fill="#e8eef4" textLength="120" lengthAdjust="spacingAndGlyphs">Bot</tspan><tspan dx="10" font-size="34" fill="#6d8ba8" letter-spacing="3">LLC</tspan>
+  </text>
+</svg>
